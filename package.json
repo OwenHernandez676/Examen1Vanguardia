@@ -1,0 +1,28 @@
+{
+  "name": "examen1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OwenHernandez676/Examen1Vanguardia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/OwenHernandez676/Examen1Vanguardia/issues"
+  },
+  "homepage": "https://github.com/OwenHernandez676/Examen1Vanguardia#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
