@@ -1,24 +1,26 @@
-const express = require('express'); //Importamos express para crear el servidor
+const express = require('express'); 
 
-const conectarDB = require('./config/db'); //Importamos la función para conectar a MongoDB
+const conectarDB = require('./config/db'); 
 
-const productoRoutes = require('./routes/productoRoutes');
+const dispositivoRoutes = require('./routes/dispositivoRoutes');
 
-const app = express();    //crea el servidor
+const app = express();    
 
-conectarDB();  //Llama a la función para conectar a MongoDB.
+conectarDB();  
 
-app.use(express.json());  //Middleware que permite leer JSON.
 
-app.use(productoRoutes); //Usa las rutas de productos para manejar los endpoints relacionados a productos.)
 
-app.get('/', (req, res) => {  //Definimos el endpoint GET para realizar request y response
+app.use(express.json());  
+
+app.use(dispositivoRoutes); 
+
+app.get('/', (req, res) => {  
 
     res.send('API funcionando correctamente');
 
 });
 
-app.listen(3000, () => {  //Levanta servidor en puerto 3000.
+app.listen(3000, () => {  
 
     console.log('Servidor corriendo en puerto 3000');
 

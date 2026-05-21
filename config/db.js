@@ -1,10 +1,10 @@
-const mongoose = require('mongoose');  //Importamos Mongoose.
+const mongoose = require('mongoose'); 
  
-const conectarDB = async () => {  //Porque conectar MongoDB toma tiempo.
+const conectarDB = async () => {  
 
-    try { //el try catch evita que el sistema no se rompe completamente.
+    try { 
 
-        await mongoose.connect('mongodb+srv://owenhernandezreyes18_db_user:Owen12345@cluster0.bsdtosk.mongodb.net/?appName=Cluster0');  //Espera la respuesta de MongoDB.
+        await mongoose.connect('mongodb+srv://owenhernandezreyes18_db_user:Owen12345@cluster0.bsdtosk.mongodb.net/test?appName=Cluster0');  
 
         console.log('MongoDB conectado'); 
 
@@ -16,4 +16,5 @@ const conectarDB = async () => {  //Porque conectar MongoDB toma tiempo.
 
 }
 
-module.exports = conectarDB;  //Exporta la función para usarla en app.js
+module.exports = conectarDB;  
+
